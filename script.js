@@ -14,9 +14,9 @@ anime.timeline({loop: false})
     delay: (el, i) => 500 + 30 * i
   });
 
+// Slide block from left side of the page
 document.addEventListener('DOMContentLoaded', () => {
-  const slideInContainer = document.querySelector('.slide-in-container');
-  const slideInBlock = document.querySelector('.slide-in-block');
+  const slideInContainers = document.querySelectorAll('.slide-in-container');
 
   function isInViewport(element) {
     const rect = element.getBoundingClientRect();
@@ -27,10 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function checkScroll() {
-    if (isInViewport(slideInContainer)) {
-      slideInBlock.classList.add('slide-in-active');
-      window.removeEventListener('scroll', checkScroll);
-    }
+    slideInContainers.forEach(container => {
+      const block = container.querySelector('.slide-in-block');
+      
+      if (block && !block.classList.contains('slide-in-active') && isInViewport(container)) {
+        block.classList.add('slide-in-active');
+      }
+    });
   }
 
   window.addEventListener('scroll', checkScroll);
@@ -38,24 +41,31 @@ document.addEventListener('DOMContentLoaded', () => {
   checkScroll();
 });
 
- document.addEventListener('DOMContentLoaded', () => {
-    const counters = document.querySelectorAll('.counter');
+// Animate numbers
+document.addEventListener('DOMContentLoaded', () => {
+
+  const containers = document.querySelectorAll('.slide-in-container');
+
+  containers.forEach(container => {
+    const counters = container.querySelectorAll('.counter');
     let animated = false;
+
+    const targetsMap = {
+      // Enter json data here
+      'impact-in-figures': [90, 70, 48],
+      'women-connect': [36, 15, 90],
+    };
+
+    const id = container.dataset.id;
+    const targets = targetsMap[id] || [];
 
     function animateCounters() {
       if (animated) return;
 
-      const container = document.querySelector('.impact-container');
       const rect = container.getBoundingClientRect();
       if (rect.top < window.innerHeight && rect.bottom >= 0) {
         counters.forEach((counter, index) => {
-          
-          // Enter json data here
-          const targets = [90, 70, 48];
-          counter.dataset.target = targets[index];
-
-          const target = +counter.dataset.target;
-          const isPercent = counter.textContent.includes('%');
+          const target = targets[index] || 0;
           let count = 0;
           const increment = target / 300;
 
@@ -78,3 +88,4 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', animateCounters);
     animateCounters();
   });
+});

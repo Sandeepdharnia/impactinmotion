@@ -1,5 +1,6 @@
 :root {
   --main-text-color: #c32e4c;
+  --red-background: rgb(198, 40, 40);
 }
 
 /* CSS Reset */
@@ -33,6 +34,17 @@ footer, header, hgroup, menu, nav, section {
 body {
   position: relative;
   overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header {
@@ -101,6 +113,7 @@ header img {
   font-size: 20px;
   margin: 20px 0;
 }
+
 .slide-in-container {
   position: relative;
   height: 100vh; 
@@ -112,7 +125,6 @@ header img {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(198, 40, 40, 1);
   background-color: #f6f6f6;
   transform: translateX(-100%);
   display: flex;
@@ -154,7 +166,7 @@ header img {
 
 .impact-container {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
   margin-top: 40px; 
 }
@@ -178,10 +190,87 @@ header img {
   margin: 10px 0;
 }
 
+.partners-section {
+  width: 1140px;
+  margin: 140px auto;
+  overflow: hidden;
+}
+
+.partners-section h2 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--main-text-color);
+  margin-bottom: 100px;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 2rem;
+  animation: scroll-marquee 40s linear infinite;
+}
+
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+.marquee-content img {
+  height: 100px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.marquee-content img:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-560%);
+  }
+}
+
+.women-connect-container .slide-in-block{
+  background-color: var(--main-text-color);
+  color: white;
+}
+
+.women-connect_description {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.women-connect-container .impact-item {
+  background-color: #f6f6f6;
+  color:#333333;
+}
+
+.women-connect_subtext {
+  font-size: 24px;
+}
+
 footer {
   display: flex;
   justify-content: center;
   padding: 16px;
   background-color: #333333;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .marquee-content img {
+    height: 60px;
+  }
 }
