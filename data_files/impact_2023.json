@@ -1,0 +1,110 @@
+{
+  "impact_2023": {
+    "integration": {
+      "internship_placement_rate": "93%",
+      "integration_rate": "60%",
+	"accelerated_integration": "5 years",
+	"employment_probability": "42% higher", 
+      "graduates": 314,
+      "partner_companies": 170,
+      "applications_received": 532
+    },
+
+
+    "bootcamp": {
+      "participants": 50,
+      "programs_run": 2,
+      "gender_ratio_fall_2023": 
+	  {
+        "female": "≈50%",
+        "male": "≈50%" 
+	},
+	"total_placed_in_internships": 48,
+    "spring_participants": 29,
+    "fall_participants": 23
+    },
+	
+	
+    "career_days": {
+      "total_participants": 31,
+      "locations": ["Zurich", "Lausanne"]
+    },
+
+    "programs_and_initiatives": {
+      "women_connect": {
+        "participants": 109,
+        "workshops": 9,
+		"felt_better": "91%"
+      },
+      "futurecoders": {
+        "courses": 35,
+        "participants": 328,
+        "trial_days": 5,
+        "trial_day_participants": 75,
+		"average_age": 16,
+        "gender_ratio": {
+          "female": "21.6%",
+          "male": "78.4%"
+        },
+		"trial_partners": ["Amazon", "ETH", "Exoscale", 					"PwC", "UBS", "Wipro"]
+      },
+
+
+      "remotecoders": {
+        "location": "Egypt",
+        "internship_rate": "91%",
+        "integration_rate": "60%"
+      },
+      "international_programs": {
+        "spain": {
+          "participants": 21,
+          "internship_rate": "70%"
+        },
+        "italy": {
+          "participants": 22,
+          "internship_rate": "63%"
+        }
+      }
+    },
+    "diversity_and_inclusion": {
+      "new_initiative": true
+    },
+    "countries_of_origin": [
+      "Turkey", "Ukraine", "Egypt", "Ethiopia", "China", "Afghanistan", "India",
+      "Iran", "Kazakhstan", "Kyrgyzstan", "Nigeria", "Philippines", "Poland",
+      "Romania", "South Korea", "Spain", "Tibet", "Venezuela"
+    ],
+    "volunteers_and_support": {
+      "partner_companies": 33,
+      "job_coaches": 129,
+      "skills_facilitators": 78,
+      "it_trainers": 80
+    },
+    "team": {
+      "total_members": 18,
+      "diversity": ["Germany", "India", "South Africa", "Poland", "Israel", "Egypt", "Switzerland", "Syria", "Palestine"]
+    },
+    "milestones": {
+      "2016": "Inception of the idea",
+      "2017": "First bootcamp in Bern",
+      "2018": "Launch of social franchising pilot in Turkey",
+      "2019": "First program in Turin, Italy",
+      "2020": "Launch of Futurecoders",
+      "2021": "First Madrid program & launch of Remotecoders",
+      "2022": "Launch of IT Career Boost & AWS re/Start",
+      "2023": "Launch of Women Connect & Swiss Diversity Award"
+    },
+	
+    "awards": {
+      "swiss_diversity_night_award": true,
+      "swisscom_entrepreneurship_award": true
+    },
+    "community_party": {
+      "graduates_celebrated": 50,
+      "programs": ["Bootcamp", "AWS Start"],
+      "female_graduates": 15,
+      "male_graduates": 35,
+      "countries_represented": 15
+    }
+  }
+}
