@@ -52,8 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const targetsMap = {
       // Enter json data here
-      'impact-in-figures': [90, 70, 48],
+      'impact-in-figures': [90, 42, 70],
       'women-connect': [36, 15, 90],
+      'bootcamp': [29, 23, 48],
     };
 
     const id = container.dataset.id;
