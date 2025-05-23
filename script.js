@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Animate numbers
 document.addEventListener('DOMContentLoaded', () => {
 
-  const containers = document.querySelectorAll('.slide-in-container');
+  const containers = document.querySelectorAll('.slide-in-container, .static-container');
 
   containers.forEach(container => {
     const counters = container.querySelectorAll('.counter');
@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'impact-in-figures': [90, 42, 70],
       'women-connect': [36, 15, 90],
       'bootcamp': [29, 23, 48],
+      'future-talents': [12, 5],
     };
 
     const id = container.dataset.id;
