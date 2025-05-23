@@ -1,60 +1,65 @@
-
 // Animate letters
-let textWrapper = document.querySelector('.ml12');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+let textWrapper = document.querySelector(".ml12");
+textWrapper.innerHTML = textWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
 
-anime.timeline({loop: false})
-  .add({
-    targets: '.ml12 .letter',
-    translateX: [40,0],
-    translateZ: 0,
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 1200,
-    delay: (el, i) => 500 + 30 * i
-  });
+anime.timeline({ loop: false }).add({
+  targets: ".ml12 .letter",
+  translateX: [40, 0],
+  translateZ: 0,
+  opacity: [0, 1],
+  easing: "easeOutExpo",
+  duration: 1200,
+  delay: (el, i) => 500 + 30 * i,
+});
 
 // Slide block from left side of the page
-document.addEventListener('DOMContentLoaded', () => {
-  const slideInContainers = document.querySelectorAll('.slide-in-container');
+document.addEventListener("DOMContentLoaded", () => {
+  const slideInContainers = document.querySelectorAll(".slide-in-container");
 
   function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
       rect.bottom >= 0
     );
   }
 
   function checkScroll() {
-    slideInContainers.forEach(container => {
-      const block = container.querySelector('.slide-in-block');
-      
-      if (block && !block.classList.contains('slide-in-active') && isInViewport(container)) {
-        block.classList.add('slide-in-active');
+    slideInContainers.forEach((container) => {
+      const block = container.querySelector(".slide-in-block");
+
+      if (
+        block &&
+        !block.classList.contains("slide-in-active") &&
+        isInViewport(container)
+      ) {
+        block.classList.add("slide-in-active");
       }
     });
   }
 
-  window.addEventListener('scroll', checkScroll);
-  
+  window.addEventListener("scroll", checkScroll);
+
   checkScroll();
 });
 
 // Animate numbers
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+  const containers = document.querySelectorAll(".slide-in-container");
 
-  const containers = document.querySelectorAll('.slide-in-container');
-
-  containers.forEach(container => {
-    const counters = container.querySelectorAll('.counter');
+  containers.forEach((container) => {
+    const counters = container.querySelectorAll(".counter");
     let animated = false;
 
     const targetsMap = {
       // Enter json data here
-      'impact-in-figures': [90, 42, 70],
-      'women-connect': [36, 15, 90],
-      'bootcamp': [29, 23, 48],
+      "impact-in-figures": [90, 42, 70],
+      "women-connect": [36, 15, 90],
+      bootcamp: [29, 23, 48],
     };
 
     const id = container.dataset.id;
@@ -86,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    window.addEventListener('scroll', animateCounters);
+    window.addEventListener("scroll", animateCounters);
     animateCounters();
   });
 });
