@@ -118,7 +118,32 @@
             "partners": [
                 {"name": "ABB", "logo_path": "./src/assets/images/Industry_ABB.png"},
                 {"name": "Adobe", "logo_path": "./src/assets/images/industry_adobe_def.png"},
-                {"name": "Migros", "logo_path": "./src/assets/images/industry_migros.png"}
+                {"name": "Migros", "logo_path": "./src/assets/images/industry_migros.png"},
+                { "name": "Bechtle", "logo_path": "./src/assets/images/Industry_Bechtle.png" },
+                { "name": "Buehler", "logo_path": "./src/assets/images/industry_buehler.png" },
+                { "name": "Datahouse", "logo_path": "./src/assets/images/Industry_Datahouse.png" },
+                { "name": "IBM", "logo_path": "./src/assets/images/Industry_ibm.jpeg" },
+                { "name": "ICRC", "logo_path": "./src/assets/images/Industry_ICRC.png" },
+                { "name": "InteractiveThings", "logo_path": "./src/assets/images/industry_InteractiveThings.png" },
+                { "name": "Liip", "logo_path": "./src/assets/images/industry_Liip-digital-process.png" },
+                { "name": "Logitech", "logo_path": "./src/assets/images/Industry_Logitech.png" },
+                { "name": "Mobiliar", "logo_path": "./src/assets/images/Industry_Mobiliar.png" },
+                { "name": "ON", "logo_path": "./src/assets/images/Industry_ON.png" },
+                { "name": "Post", "logo_path": "./src/assets/images/industry_post.png" },
+                { "name": "PWC", "logo_path": "./src/assets/images/Industry_PWC-1.png" },
+                { "name": "Roche", "logo_path": "./src/assets/images/industry_Roche.png" },
+                { "name": "Rychiger", "logo_path": "./src/assets/images/industry_Rychiger.png" },
+                { "name": "SBB", "logo_path": "./src/assets/images/Industry_SBB.png" },
+                { "name": "Seantis", "logo_path": "./src/assets/images/Industry_Seantis.png" },
+                { "name": "SIX", "logo_path": "./src/assets/images/industry_SIX.png" },
+                { "name": "SwissCluster", "logo_path": "./src/assets/images/industry_SwissCluster.png" },
+                { "name": "Swisscom", "logo_path": "./src/assets/images/industry_swisscom.png" },
+                { "name": "SwissTXT", "logo_path": "./src/assets/images/Industry_SwissTXT.png" },
+                { "name": "Technis", "logo_path": "./src/assets/images/Industry_Technis.png" },
+                { "name": "Temenos", "logo_path": "./src/assets/images/industry_Temenos.png" },
+                { "name": "UBS", "logo_path": "./src/assets/images/Industry_UBS_grau2.png" },
+                { "name": "Vaudoise", "logo_path": "./src/assets/images/industry_Vaudoise.png" },
+                { "name": "Zurich", "logo_path": "./src/assets/images/Industry_Zurich2.png" }                
             ]
         }
     ]
