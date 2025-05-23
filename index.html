@@ -21,20 +21,21 @@
       <h1 class="ml12">Impact report <span class="year">[2025]</span></h1>
       <div class="button_years-container">
         <button class="button_2025">[2025]</button>
-        <button class="button_2024">[2024]</button>
-        <button class="button_2023">[2023]</button>
+        <button class="button_2024" onclick="loadData('./data/2024.json')">[2024]</button>
+        <button class="button_2023" onclick="loadData('./data/2023.json')">[2023]</button>
       </div>
     </section>
     <section class="impact_container">
-      <div class="impact_section">
+
+      <!-- <div class="impact_section">
         <h2>Impact</h2>
         <p>We are an impact-driven organization and therefore prioritize making a positive impact in the world. 
           We collaborate with other organizations to achieve our goals and jointly work towards achieving the Sustainable Development Goals.
         </p>
         <p>We focus on “Quality Education”, “Decent Work” and “Reduced Inequalities” from the Sustainable Development Goals Agenda 2030.</p>
-      </div>
+      </div> -->
 
-      <div class="slide-in-container" data-id="impact-in-figures">
+      <!-- <div class="slide-in-container" data-id="impact-in-figures">
         <div class="slide-in-block">
           <div class="slide-in-content">
             <h2>Impact in Figures <span class="year">[2025]</span></h2>
@@ -73,9 +74,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="partners-section">
+      <!-- <div class="partners-section">
         <h2>Internship Partners</h2>
         <div class="marquee">
           <div class="marquee-content">
@@ -109,9 +110,9 @@
             <img src="./src/assets/images/Industry_Zurich2.png" alt="Zurich logo" />
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="slide-in-container women-connect-container" data-id="women-connect">
+      <!-- <div class="slide-in-container women-connect-container" data-id="women-connect">
         <div class="slide-in-block">
           <div class="slide-in-content">
             <h2>Women Connect</h2>
@@ -157,9 +158,9 @@
             
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="slide-in-container" data-id="bootcamp">
+      <!-- <div class="slide-in-container" data-id="bootcamp">
         <div class="slide-in-block">
           <div class="slide-in-content">
             <h2>Bootcamp <span class="year">[2025]</span></h2>
@@ -203,7 +204,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
   </main>
@@ -213,6 +214,7 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <script type="module" src="./script.js"></script>
+  <script src="./sections.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>

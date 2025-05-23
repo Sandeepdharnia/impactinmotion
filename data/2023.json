@@ -1,0 +1,23 @@
+{
+    "year" : 2023,
+    "sections": [
+        {
+            "type": "integration_numbers",
+            "internship_placement_rate": 77,
+            "integration_rate": 55,
+            "accelerated_integration": 5,
+            "employment_probability": 44,
+            "graduates": 314,
+            "partner_companies": 170,
+            "applications_received": 532
+        },
+        {
+            "type": "partners",
+            "partners": [
+                {"name": "ABB", "logo_path": "./src/assets/images/Industry_ABB.png"},
+                {"name": "Adobe", "logo_path": "./src/assets/images/industry_adobe_def.png"},
+                {"name": "Migros", "logo_path": "./src/assets/images/industry_migros.png"}
+            ]
+        }
+    ]
+}
