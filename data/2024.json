@@ -2,14 +2,40 @@
     "year" : 2024,
     "sections": [
         {
+            "type": "impact_section"
+        },
+        {
             "type": "integration_numbers",
-            "internship_placement_rate": 93,
-            "integration_rate": 60,
+            "internship_placement_rate": 90,
+            "integration_rate": 70,
             "accelerated_integration": 5,
             "employment_probability": 42,
             "graduates": 314,
             "partner_companies": 170,
-            "applications_received": 532
+            "applications_received": 533
+        },
+        {
+            "type": "future_talents",
+            "future_talents_location": "In Zurich and Lausanne",
+            "future_talents_participants": 12,
+            "secured_apprenticeships": 5,
+            "future_talents_description": "Helping young refugees and financially disadvantaged youth access IT apprenticeships in Switzerland. Through a 5-day training, participants develop soft skills and explore IT career paths."
+        },
+        {
+            "type": "women_connect",
+            "women_connect_description": "Interactive workshop series aiming to create a safe space and fostering a supportive environment to spark a fire amongst women from refugee or migrant backgrounds to develop their interest in IT by learning from women in tech.",
+            "female_participants": 36,
+            "workshop_leaders": 15,
+            "female_impact": 90,
+            "female_impact_description": "Felt better equipped to build their own IT careers"
+        },
+        {
+            "type": "bootcamp",
+            "total_participants": 52,
+            "spring_participants": 29,
+            "fall_participants": 23,
+            "internship_placements": 48,
+            "bootcamp_description": "3-month full-time training followed by a 6-12-month internship offered twice a year to help participants from refugee and migrant backgrounds enter the IT workforce by developing IT specialisations and soft skills."
         },
         {
             "type": "partners",

@@ -1,6 +1,7 @@
 :root {
   --main-text-color: #c32e4c;
   --red-background: rgb(198, 40, 40);
+  --grey-background: #f6f6f6;
 }
 
 /* CSS Reset */
@@ -191,6 +192,31 @@ header img {
   font-weight: 700;
 }
 
+.static-container {
+  position: relative;
+  height: 100vh; 
+}
+
+.static-block {
+  display: flex;
+  justify-content: center;
+}
+
+.static-content {
+  height: 100vh;
+  width: 1140px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.static-content h2 {
+  margin: 40px 0;
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--main-text-color);
+}
+
 .impact-images_container {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -253,6 +279,12 @@ header img {
   font-size: 40px;
   margin: 10px 0;
 }
+
+ .item-without_number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
 
 .partners-section {
   width: 1140px;
@@ -337,6 +369,45 @@ header img {
   height: 240px;
   border-radius: 6px;
   object-fit: cover;
+}
+
+.contact-section {
+  background-color: var(--main-text-color);
+  background-color: var(--grey-background);
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.contact-container {
+  width: 1140px;
+}
+
+.contact-container h2 {
+  margin: 20px 0;
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--main-text-color);
+}
+
+.contact-container p {
+  margin: 40px 0;
+  font-size: 20px;
+}
+
+.contact-container a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: var(--main-text-color);
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+.contact-container a:hover { 
+  background-color: #6dbdb2;
+  color: white;
 }
 
 footer {
