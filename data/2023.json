@@ -2,14 +2,33 @@
     "year" : 2023,
     "sections": [
         {
+            "type": "impact_section"
+        },
+        {
             "type": "integration_numbers",
-            "internship_placement_rate": 77,
-            "integration_rate": 55,
+            "internship_placement_rate": 93,
+            "integration_rate": 60,
             "accelerated_integration": 5,
             "employment_probability": 44,
             "graduates": 314,
             "partner_companies": 170,
             "applications_received": 532
+        },
+        {
+            "type": "women_connect",
+            "women_connect_description": "In 2023, we launched Women Connect to provide opportunities for women in the underrepresented field of IT, focusing on those from migrant or refugee backgrounds. Our pilot program featured workshops led by accomplished professionals, covering essential IT skills and exploring diverse career paths.",
+            "female_participants": 16,
+            "workshop_leaders": 15,
+            "female_impact": 90,
+            "female_impact_description": "Empowering women for IT careers"
+        },
+        {
+            "type": "bootcamp",
+            "total_participants": 50,
+            "spring_participants": 28,
+            "fall_participants": 22,
+            "internship_placements": 50,
+            "bootcamp_description": "3-month full-time training followed by a 6-12-month internship offered twice a year to help participants from refugee and migrant backgrounds enter the IT workforce by developing IT specialisations and soft skills."
         },
         {
             "type": "partners",

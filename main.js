@@ -38,7 +38,7 @@ function setHandlers() {
     checkScroll();
 
     // Counters
-    const containers = document.querySelectorAll('.slide-in-container');
+    const containers = document.querySelectorAll('.slide-in-container, .static-container');
 
     containers.forEach(container => {
         const counters = container.querySelectorAll('.counter');
