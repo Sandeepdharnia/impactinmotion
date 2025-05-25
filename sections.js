@@ -64,7 +64,6 @@ sections_renders.future_talents = function(year, data) {
             <p class="slide-in_description">
               ${data.future_talents_description}
             </p>
-            
                 <ul class="impact-container">
                     <li class="impact-item item-without_number">
                     <div>
@@ -143,10 +142,56 @@ sections_renders.women_connect = function(year, data) {
                 <img src="./src/assets/images/19-03-Powercoders-Grauduationparty-Basel-058-klein-scaled.jpeg" alt="Powercoders_Icons">
               </div>
             </div>
-            
           </div>
         </div>
       </div>`;
+}
+
+sections_renders.futurecoders = function(year, data) {
+    return `
+    <div class="static-container" data-id="future-talents">
+        <div class="static-block">
+          <div class="static-content">
+            <h2>Futurecoders</h2>
+            <p class="slide-in_description">
+              ${data.futurecoders_description}
+            </p>
+                <ul class="impact-container">
+                    <li class="impact-item">
+                        <div>
+                            <p class="impact-counter">
+                                <span class="counter" data-target="${data.futurecoders_graduates}">0</span>
+                            </p>
+                            <p class="women-connect_subtext">Graduates</p>
+                            <img src="./src/assets/images/Powercoders_Icons_Mission.png" alt="Powercoders_Icons">
+                        </div>
+                    </li>
+                    <li class="impact-item">
+                        <div>
+                            <p class="impact-counter">
+                                <span class="counter" data-target="${data.futurecoders_average_age}">0</span>
+                            </p>
+                            <p class="women-connect_subtext">Years old on average</p>
+                            <img src="./src/assets/images/Powercoders_Icons_Mission.png" alt="Powercoders_Icons">
+                        </div>
+                    </li>
+                    <li class="impact-item">
+                        <div>
+                            <p class="impact-counter">
+                                <span class="counter" data-target="${data.futurecoders_trial_days}">0</span>
+                            </p>
+                            <p class="women-connect_subtext">${data.futurecoders_trial_days_description}</p>
+                            <img src="./src/assets/images/Powercoders_Icons_WhatWeProvide-21-300x300.png" alt="Powercoders_Icons">
+                        </div>
+                    </li>
+                </ul>
+                <div class="impact-images_container">
+                    <img src="./src/assets/images/girl-coding-w_1848-1536x1536.jpg" alt="Career Day image">
+                    <img src="./src/assets/images/futurecoders-participants-5.jpg" alt="Career Day image">
+                </div>
+            </div>
+        </div>
+    </div>`;
 }
 
 sections_renders.bootcamp = function(year, data) {
