@@ -41,6 +41,15 @@
             "bootcamp_description": "3-month full-time training followed by a 6-12-month internship offered twice a year to help participants from refugee and migrant backgrounds enter the IT workforce by developing IT specialisations and soft skills."
         },
         {
+            "type": "community",
+            "community_description": "We celebrated 50 graduates: A Night to Remember! In July 2023 we got together for our awesome Community Party, where we celebrated our magnificent community along with the 50 graduates from our Bootcamp and AWS re/Start program. They began their internships in fall 2023 and are now working hard to achieve their goals for a bright future.",
+            "community_members": 50,
+            "community_members_description": "Graduates",
+            "community_job_coaches": 129,
+            "community_it_trainers": 80,
+            "community_workshop_facilitators": 78
+        },
+        {
             "type": "partners",
             "partners": [
                 {"name": "ABB", "logo_path": "./src/assets/images/Industry_ABB.png"},
