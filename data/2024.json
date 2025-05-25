@@ -70,6 +70,16 @@
             "overview_image": "./src/assets/images/CareerDay-Deutschschweiz-25_1.jpg"
         },
         {
+            "type": "highlights",
+            "highlights_description": "Talents have been placed in 54 internships and 1 apprenticeship.",
+            "highlights_participants": 52,
+            "bootcamp_applicants": 533,
+            "highlights_jobs": 42,
+            "highlight_female_percentage": "",
+            "highlights_jobs_description": "found a job in 2024",
+            "highlights_image": ""
+        },
+        {
             "type": "partners",
             "partners": [
                 {"name": "ABB", "logo_path": "./src/assets/images/Industry_ABB.png"},
