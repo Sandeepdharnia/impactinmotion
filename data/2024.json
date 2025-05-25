@@ -30,6 +30,16 @@
             "female_impact_description": "Felt better equipped to build their own IT careers"
         },
         {
+            "type": "futurecoders",
+            "futurecoders_description": "Offering web development, mobile app development and video game design courses for 13-20-year-olds in Switzerland, promoting equal opportunities and diversity in the IT labour market.",
+            "futurecoders_cities": 8,
+            "futurecoders_programs": ["Web Development", "Mobile App Development", "Video Game Design"],
+            "futurecoders_graduates": 331,
+            "futurecoders_average_age": 16,
+            "futurecoders_trial_days": 8,
+            "futurecoders_trial_days_description": "trial days at Amazon, ETH, Exoscale, PwC, UBS and Wipro"
+        },
+        {
             "type": "bootcamp",
             "total_participants": 52,
             "spring_participants": 29,

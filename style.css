@@ -119,10 +119,6 @@ header img {
   line-height: 1em;
 }
 
-.impact_container {
-  padding-top: 30px;
-}
-
 .impact_section {
   width: 1140px;
   margin: 100px auto;
@@ -250,7 +246,7 @@ header img {
   flex-wrap: wrap;
   gap: 1rem;
   list-style: none;
-  margin-top: 40px; 
+  margin-top: 30px; 
 }
 
 .impact-item {

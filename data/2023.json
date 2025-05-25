@@ -23,6 +23,16 @@
             "female_impact_description": "Empowering women for IT careers"
         },
         {
+            "type": "futurecoders",
+            "futurecoders_description": "Our spin-off Futurecoders is committed to equal opportunities in education. We enable young refugees and young people from low-income backgrounds to develop their digital skills and interest in IT professions in courses and vacation camps. This should increase their chances in later professional life.",
+            "futurecoders_cities": 8,
+            "futurecoders_programs": ["Web Development", "Mobile App Development", "Video Game Design"],
+            "futurecoders_graduates": 328,
+            "futurecoders_average_age": 16,
+            "futurecoders_trial_days": 75,
+            "futurecoders_trial_days_description": "Teens in IT Trial Days"
+        },
+        {
             "type": "bootcamp",
             "total_participants": 50,
             "spring_participants": 28,
