@@ -144,7 +144,7 @@ sections_renders.women_connect = function(year, data) {
             </div>
           </div>
         </div>
-      </div>`;
+    </div>`;
 }
 
 sections_renders.futurecoders = function(year, data) {
@@ -235,6 +235,53 @@ sections_renders.bootcamp = function(year, data) {
                 <div class="bootcamp_grid-container">
                     <img src="./src/assets/images/00763CareerDay-Deutschschweiz-25-Pano-S.jpg" alt="Career Day image">
                     <img src="./src/assets/images/01715Powercoders-CareerDay-25_1-Romandie(20250507-110740)-S.jpg" alt="Career Day image">
+                </div>
+            </div>
+        </div>
+    </div>`;
+}
+
+sections_renders.community = function(year, data) {
+    return `
+    <div class="static-container" data-id="future-talents">
+        <div class="static-block">
+          <div class="static-content">
+            <h2>Community</h2>
+            <p class="slide-in_description">
+              ${data.community_description}
+            </p>
+                <ul class="impact-container">
+                    <li class="impact-item">
+                        <div>
+                            <p class="impact-counter">
+                                <span class="counter" data-target="${data.community_job_coaches}">0</span>
+                            </p>
+                            <p class="women-connect_subtext">Volunteer Job Coaches</p>
+                            <img src="./src/assets/images/Powercoders_Icons_Mission.png" alt="Powercoders_Icons">
+                        </div>
+                    </li>
+                    <li class="impact-item">
+                        <div>
+                            <p class="impact-counter">
+                                <span class="counter" data-target="${data.community_it_trainers}">0</span>
+                            </p>
+                            <p class="women-connect_subtext">Volunteer IT Trainers</p>
+                            <img src="./src/assets/images/Powercoders_Icons_Mission.png" alt="Powercoders_Icons">
+                        </div>
+                    </li>
+                    <li class="impact-item">
+                        <div>
+                            <p class="impact-counter">
+                                <span class="counter" data-target="${data.community_members}">0</span>
+                            </p>
+                            <p class="women-connect_subtext">${data.community_members_description}</p>
+                            <img src="./src/assets/images/Powercoders_Icons_WhatWeProvide-21-300x300.png" alt="Powercoders_Icons">
+                        </div>
+                    </li>
+                </ul>
+                <div class="impact-images_container">
+                    <img src="./src/assets/images/Community_Party_1.png" alt="Career Day image">
+                    <img src="./src/assets/images/Community_Party_2.png" alt="Career Day image">
                 </div>
             </div>
         </div>

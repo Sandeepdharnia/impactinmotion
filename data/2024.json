@@ -37,7 +37,7 @@
             "futurecoders_graduates": 331,
             "futurecoders_average_age": 16,
             "futurecoders_trial_days": 8,
-            "futurecoders_trial_days_description": "trial days at Amazon, ETH, Exoscale, PwC, UBS and Wipro"
+            "futurecoders_trial_days_description": "Trial days at Amazon, ETH, Exoscale, PwC, UBS and Wipro"
         },
         {
             "type": "bootcamp",
@@ -46,6 +46,15 @@
             "fall_participants": 23,
             "internship_placements": 48,
             "bootcamp_description": "3-month full-time training followed by a 6-12-month internship offered twice a year to help participants from refugee and migrant backgrounds enter the IT workforce by developing IT specialisations and soft skills."
+        },
+        {
+            "type": "community",
+            "community_description": "“My job coach, Arne, went the extra mile to support me through some difficult moments along the way. He looked for solutions and gave me support when I needed it.” - Anna Ostrowska, Powercoders alumna on her journey with job coach Arne Heise",
+            "community_members": 61,
+            "community_members_description": "Association members",
+            "community_job_coaches": 167,
+            "community_it_trainers": 100,
+            "community_workshop_facilitators": 62
         },
         {
             "type": "partners",
