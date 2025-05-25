@@ -62,6 +62,112 @@
             "companies_with_multiple_interns": "30",
             "overview_image": "./src/assets/images/Overview_2023.png"
         },
+            "type": "community_party",
+            "graduates": 50,
+            "programs": ["Bootcamp", "AWS re/Start"],
+            "countries_represented": 15,
+            "gender_distribution": {
+                "female": 15,
+                "male": 35
+      }
+    },
+    {
+            "type": "impact_numbers",
+            "graduates": 314,
+            "partner_companies": 170,
+            "internship_placement_rate": 93,
+            "integration_rate": 60,
+            "applications_received": 532
+    },
+    {
+            "type": "initiatives",
+            "remotecoders": {
+                "internship_rate": 91,
+                "integration_rate": 60,
+                "target": "Vulnerable talents in Egypt"
+      },
+            "futurecoders": {
+                "courses": 35,
+                "participants": 328,
+                "trial_days": 5,
+                "trial_participants": 75
+      },
+            "women_connect": {
+                "participants": 16,
+                "description": "Empowering women for IT careers"
+      },
+            "bootcamp": {
+                "participants": 50,
+                "description": "3-month Bootcamp followed by 6–12 month internships"
+      }
+    },
+    {
+            "type": "new_initiative_women_connect",
+            "workshops": 9,
+            "participants": 109,
+            "it_assessments": 10,
+            "international": {
+                "spain": {
+                "participants": 21,
+                "internship_rate": 70
+        },
+                "italy": {
+                "participants": 22,
+                "internship_rate": 63
+        }
+      }
+    },
+    {
+            "type": "futurecoders",
+            "courses": {
+                "web_development": 18,
+                "video_game_design": 17
+      },
+            "participants": 328,
+            "gender_distribution": {
+                "female": 21.6,
+                "male": 78.4
+      },
+            "trial_days": 75,
+            "trial_gender_distribution": {
+                "female": 20,
+                "male": 80
+      },
+            "target_group": "Young refugees and low-income youth"
+    },
+    {
+            "type": "participant_origins",
+            "countries": [
+        "Turkey", "Ukraine", "Egypt", "Ethiopia", "China", "Afghanistan", "India", "Iran", "Kazakhstan", "Kyrgyzstan",
+        "Nigeria", "Philippines", "Poland", "Romania", "South Korea", "Spain", "Tibet", "Venezuela"
+      ]
+    },
+    {
+            "type": "ict_challenges",
+            "ict_gap": 38700,
+            "economic_risk": "CHF 30 billion by 2030",
+            "solution": "Empowering refugees & migrants for IT careers"
+    },
+    {
+            "type": "timeline_milestones",
+            "milestones": {
+                "2016": "Inception of the idea",
+                "2017": "First bootcamp in Bern",
+                "2018": "",
+                "2019": "First program in Turin, Italy",
+                "2020": "Launch of Futurecoders",
+                "2021": "First program in Madrid, Spain and launch of Remotecoders",
+                "2022": "Launch of IT Career Boost and AWS re/Start Programs",
+                "2023": "Launch of Women Connect and Swiss Diversity Night Award"
+      }
+    },
+    {
+            "type": "about_us",
+            "vision": "A world in which diversity in the IT industry and beyond is a given and every talent gets an opportunity.",
+            "team_size": 18,
+            "countries_represented": ["Germany", "India", "South Africa", "Poland", "Israel", "Egypt", "Switzerland", "Syria", "Palestine"],
+            "languages_spoken": ["French", "Italian", "German", "Swiss German", "Hindi", "Arabic", "English", "Afrikaans"]
+    },
         {
             "type": "partners",
             "partners": [
@@ -94,6 +200,7 @@
                 { "name": "Vaudoise", "logo_path": "./src/assets/images/industry_Vaudoise.png" },
                 { "name": "Zurich", "logo_path": "./src/assets/images/Industry_Zurich2.png" }
             ]
+]
         }
-    ]
+            ]
 }

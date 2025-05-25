@@ -70,6 +70,108 @@
             "overview_image": "./src/assets/images/CareerDay-Deutschschweiz-25_1.jpg"
         },
         {
+            "type": "women_connect",
+            "location": ["Bern", "Zurich", "Lausanne"],
+            "description": "Interactive workshop series for refugee/migrant women to spark interest in IT through tech mentors.",
+            "participants": 36,
+            "workshop_leaders": 15,
+            "impact": "90% felt better equipped to build their own IT careers"
+        },
+        {
+            "type": "digital_literacy",
+            "location": "Viererfeld Temporary Asylum Centre, Bern",
+            "participants": 15,
+            "volunteers": 10,
+            "description": "Essential digital skills training by Powercoders alumni for asylum seekers.",
+            "impact": "87% will use the skills in everyday life"
+        },
+        {
+            "type": "future_talents",
+            "location": ["Zurich", "Lausanne"],
+            "participants": 12,
+            "secured_apprenticeships": 5,
+            "description": "5-day training for young refugees and disadvantaged youth to develop soft skills and explore IT career paths."
+        },
+        {
+            "type": "bootcamp",
+            "total_participants": 52,
+            "spring": 29,
+            "fall": 23,
+            "internship_placements": 48,
+            "description": "3-month full-time IT training followed by internships to support workforce entry for refugees/migrants."
+        },
+        {
+            "type": "events",
+            "highlights": [
+                "World Refugee Day at ON AG",
+                "Career days",
+                "Cultural workshops"
+      ],
+            "themes": [
+                "Empathy and inclusion",
+                "Diversity in tech",
+                "Alumni storytelling"
+      ]
+        },
+        {
+            "type": "community",
+            "members": 61,
+            "new_board_members": 2,
+            "job_coaches": 167,
+            "it_trainers": 100,
+            "workshop_facilitators": 62,
+            "quote": "My job coach, Arne, went the extra mile to support me through difficult moments."
+        },
+        {
+            "type": "futurecoders",
+            "cities": 8,
+            "programs": ["Web Development", "Mobile App Development", "Video Game Design"],
+            "graduates": 331,
+            "average_age": 16,
+            "trial_days": 8,
+            "companies": ["Amazon", "ETH", "Exoscale", "PwC", "UBS", "Wipro"]
+        },
+        {
+            "type": "overview",
+            "career_days": 28,
+            "bootcamp_participants": 372,
+            "bootcamp_graduates": 365,
+            "internship_companies": 205,
+            "companies_with_multiple_interns": "30%",
+            "gender_distribution": {
+                "male": 73,
+                "female": 27
+    },
+            "impact_2024": {
+            "internships": 54,
+            "apprenticeships": 1,
+            "jobs": 42
+      }
+        },
+        {
+            "type": "highlights_2024",
+            "diversity_workshops": 7,
+            "bootcamp_applicants": 533,
+            "bootcamp_participants": 52,
+            "new_features": [
+                "Ambassador committee (4 volunteers)",
+                "Alumni academy workshops",
+                "Piscine prep with 42Lausanne"
+      ]
+        },
+        {
+            "type": "acknowledgments",
+            "categories": [
+                "Partner companies",
+                "Cantons & federal government",
+                "Donors",
+                "Association members",
+                "Board",
+                "Volunteers",
+                "Alumni"
+      ],
+        }
+        {
             "type": "partners",
             "partners": [
                 {"name": "ABB", "logo_path": "./src/assets/images/Industry_ABB.png"},

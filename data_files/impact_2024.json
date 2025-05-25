@@ -35,6 +35,9 @@
       },
 
       "futurecoders": {
+        "location": ["Bern", "Zurich", "Lausanne", "Lucerne", "Fribourg"],
+        "audience_age": "13-20",
+        "programs": ["Web Development", "Mobile App Development", "Video Game Design"],
         "courses": 35,
         "participants": 331,
         "trial_days": 8,
