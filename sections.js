@@ -288,6 +288,63 @@ sections_renders.community = function(year, data) {
     </div>`;
 }
 
+sections_renders.overview = function(year, data) {
+    return `
+    <div class="slide-in-container women-connect-container" data-id="women-connect">
+        <div class="slide-in-block">
+          <div class="slide-in-content">
+            <h2>${data.overview_years} years in a nutshell</h2>
+            <p class="slide-in_description">
+              ${data.overview_description}
+            </p>
+            <div class="women-connect_flex-container">
+                <ul class="impact-container">
+                    <li class="impact-item">
+                        <div>
+                            <p class="impact-counter">
+                                <span class="counter" data-target="${data.bootcamp_participants}">0</span>${data.bootcamp_participants_percentage}
+                            </p>
+                            <p class="women-connect_subtext">${data.bootcamp_participants_description}</p>
+                            <img src="./src/assets/images/Powercoders_Icons_Whatexpect-02-300x300.png" alt="Powercoders_Icons">
+                        </div>
+                    </li>
+                    <li class="impact-item">
+                        <div>
+                            <p class="impact-counter">
+                                <span class="counter" data-target="${data.bootcamp_graduates}">0</span>
+                            </p>
+                            <p class="women-connect_subtext">Bootcamp graduates</p>
+                            <img src="./src/assets/images/Powercoders_Icons_Whatexpect-02-300x300.png" alt="Powercoders_Icons">
+                        </div>
+                    </li>
+                    <li class="impact-item">
+                        <div>
+                            <p class="impact-counter">
+                                <span class="counter" data-target="${data.internship_companies}">0</span>
+                            </p>
+                            <p class="women-connect_subtext">Internship companies</p>
+                            <img src="./src/assets/images/Powercoders_Icons_Mission.png" alt="Powercoders_Icons">
+                        </div>
+                    </li>
+                    <li class="impact-item">
+                        <div>
+                            <p class="impact-counter">
+                                <span class="counter" data-target="${data.career_days}">0</span>
+                            </p>
+                            <p class="women-connect_subtext">Career days</p>
+                            <img src="./src/assets/images/Powercoders_Icons_WhatWeProvide-21-300x300.png" alt="Powercoders_Icons">
+                        </div>
+                    </li>
+                </ul>
+              <div>
+                <img src="${data.overview_image}" alt="Powercoders_Icons">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>`;
+}
+
 sections_renders.partners = function(year, data) {
     let partners_logos = [];
     for (let i = 0; i < data.partners.length; i++) {
