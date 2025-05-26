@@ -399,11 +399,13 @@ sections_renders.partners = function(year, data) {
     }
 
     return `
-    <div class="partners-section">
-        <h2>Internship Partners</h2>
-        <div class="marquee">
-            <div class="marquee-content">
-                ${partners_logos.join('')}
+    <div class="partners-container">
+        <div class="partners-section">
+            <h2>Internship Partners</h2>
+            <div class="marquee">
+                <div class="marquee-content">
+                    ${partners_logos.join('')}
+                </div>
             </div>
         </div>
     </div>`;
