@@ -1,0 +1,116 @@
+{
+    "year" : 2025,
+    "sections": [
+        {
+            "type": "impact_section"
+        },
+        {
+            "type": "integration_numbers",
+            "internship_placement_rate": 90,
+            "integration_rate": 70,
+            "accelerated_integration": 5,
+            "employment_probability": 42,
+            "graduates": 314,
+            "partner_companies": 170,
+            "applications_received": 533
+        },
+        {
+            "type": "future_talents",
+            "future_talents_location": "In Zurich and Lausanne",
+            "future_talents_participants": 12,
+            "secured_apprenticeships": 5,
+            "future_talents_description": "Helping young refugees and financially disadvantaged youth access IT apprenticeships in Switzerland. Through a 5-day training, participants develop soft skills and explore IT career paths."
+        },
+        {
+            "type": "women_connect",
+            "women_connect_description": "Interactive workshop series aiming to create a safe space and fostering a supportive environment to spark a fire amongst women from refugee or migrant backgrounds to develop their interest in IT by learning from women in tech.",
+            "female_participants": 36,
+            "workshop_leaders": 15,
+            "female_impact": 90,
+            "female_impact_description": "Felt better equipped to build their own IT careers"
+        },
+        {
+            "type": "futurecoders",
+            "futurecoders_description": "Offering web development, mobile app development and video game design courses for 13-20-year-olds in Switzerland, promoting equal opportunities and diversity in the IT labour market.",
+            "futurecoders_cities": 8,
+            "futurecoders_programs": ["Web Development", "Mobile App Development", "Video Game Design"],
+            "futurecoders_graduates": 331,
+            "futurecoders_average_age": 16,
+            "futurecoders_trial_days": 8,
+            "futurecoders_trial_days_description": "Trial days at Amazon, ETH, Exoscale, PwC, UBS and Wipro"
+        },
+        {
+            "type": "bootcamp",
+            "total_participants": 52,
+            "spring_participants": 29,
+            "fall_participants": 23,
+            "internship_placements": 48,
+            "bootcamp_description": "3-month full-time training followed by a 6-12-month internship offered twice a year to help participants from refugee and migrant backgrounds enter the IT workforce by developing IT specialisations and soft skills."
+        },
+        {
+            "type": "community",
+            "community_description": "“My job coach, Arne, went the extra mile to support me through some difficult moments along the way. He looked for solutions and gave me support when I needed it.” - Anna Ostrowska, Powercoders alumna on her journey with job coach Arne Heise",
+            "community_members": 61,
+            "community_members_description": "Association members",
+            "community_job_coaches": 167,
+            "community_it_trainers": 100,
+            "community_workshop_facilitators": 62
+        },
+        {
+            "type": "overview",
+            "overview_years": 7,
+            "overview_description": "From 2017 to 2025, Powercoders is set for success.",
+            "career_days": 32,
+            "bootcamp_participants": 372,
+            "bootcamp_participants_percentage": "",
+            "bootcamp_participants_description": "Bootcamp participants",
+            "bootcamp_graduates": 365,
+            "internship_companies": 205,
+            "companies_with_multiple_interns": "30",
+            "overview_image": "./src/assets/images/CareerDay-Deutschschweiz-25_1.jpg"
+        },
+        {
+            "type": "highlights",
+            "highlights_description": "Talents have been placed in 54 internships and 1 apprenticeship.",
+            "highlights_participants": 52,
+            "bootcamp_applicants": 533,
+            "highlights_jobs": 42,
+            "highlight_female_percentage": "",
+            "highlights_jobs_description": "found a job in 2025",
+            "highlights_image": ""
+        },
+        {
+            "type": "partners",
+            "partners": [
+                {"name": "ABB", "logo_path": "./src/assets/images/Industry_ABB.png"},
+                {"name": "Adobe", "logo_path": "./src/assets/images/industry_adobe_def.png"},
+                {"name": "Migros", "logo_path": "./src/assets/images/industry_migros.png"},
+                { "name": "Bechtle", "logo_path": "./src/assets/images/Industry_Bechtle.png" },
+                { "name": "Buehler", "logo_path": "./src/assets/images/industry_buehler.png" },
+                { "name": "Datahouse", "logo_path": "./src/assets/images/Industry_Datahouse.png" },
+                { "name": "IBM", "logo_path": "./src/assets/images/Industry_ibm.jpeg" },
+                { "name": "ICRC", "logo_path": "./src/assets/images/Industry_ICRC.png" },
+                { "name": "InteractiveThings", "logo_path": "./src/assets/images/industry_InteractiveThings.png" },
+                { "name": "Liip", "logo_path": "./src/assets/images/industry_Liip-digital-process.png" },
+                { "name": "Logitech", "logo_path": "./src/assets/images/Industry_Logitech.png" },
+                { "name": "Mobiliar", "logo_path": "./src/assets/images/Industry_Mobiliar.png" },
+                { "name": "ON", "logo_path": "./src/assets/images/Industry_ON.png" },
+                { "name": "Post", "logo_path": "./src/assets/images/industry_post.png" },
+                { "name": "PWC", "logo_path": "./src/assets/images/Industry_PWC-1.png" },
+                { "name": "Roche", "logo_path": "./src/assets/images/industry_Roche.png" },
+                { "name": "Rychiger", "logo_path": "./src/assets/images/industry_Rychiger.png" },
+                { "name": "SBB", "logo_path": "./src/assets/images/Industry_SBB.png" },
+                { "name": "Seantis", "logo_path": "./src/assets/images/Industry_Seantis.png" },
+                { "name": "SIX", "logo_path": "./src/assets/images/industry_SIX.png" },
+                { "name": "SwissCluster", "logo_path": "./src/assets/images/industry_SwissCluster.png" },
+                { "name": "Swisscom", "logo_path": "./src/assets/images/industry_swisscom.png" },
+                { "name": "SwissTXT", "logo_path": "./src/assets/images/Industry_SwissTXT.png" },
+                { "name": "Technis", "logo_path": "./src/assets/images/Industry_Technis.png" },
+                { "name": "Temenos", "logo_path": "./src/assets/images/industry_Temenos.png" },
+                { "name": "UBS", "logo_path": "./src/assets/images/Industry_UBS_grau2.png" },
+                { "name": "Vaudoise", "logo_path": "./src/assets/images/industry_Vaudoise.png" },
+                { "name": "Zurich", "logo_path": "./src/assets/images/Industry_Zurich2.png" }
+            ]
+        }
+    ]
+}
