@@ -1,68 +1,72 @@
 {
-    "year" : 2023,
-    "sections": [
-        {
-            "type": "impact_section"
-        },
-        {
-            "type": "integration_numbers",
-            "internship_placement_rate": 93,
-            "integration_rate": 60,
-            "accelerated_integration": 5,
-            "employment_probability": 44,
-            "graduates": 314,
-            "partner_companies": 170,
-            "applications_received": 532
-        },
-        {
-            "type": "women_connect",
-            "women_connect_description": "In 2023, we launched Women Connect to provide opportunities for women in the underrepresented field of IT, focusing on those from migrant or refugee backgrounds. Our pilot program featured workshops led by accomplished professionals, covering essential IT skills and exploring diverse career paths.",
-            "female_participants": 16,
-            "workshop_leaders": 15,
-            "female_impact": 90,
-            "female_impact_description": "Empowering women for IT careers"
-        },
-        {
-            "type": "futurecoders",
-            "futurecoders_description": "Our spin-off Futurecoders is committed to equal opportunities in education. We enable young refugees and young people from low-income backgrounds to develop their digital skills and interest in IT professions in courses and vacation camps. This should increase their chances in later professional life.",
-            "futurecoders_cities": 8,
-            "futurecoders_programs": ["Web Development", "Mobile App Development", "Video Game Design"],
-            "futurecoders_graduates": 328,
-            "futurecoders_average_age": 16,
-            "futurecoders_trial_days": 75,
-            "futurecoders_trial_days_description": "Teens in IT Trial Days"
-        },
-        {
-            "type": "bootcamp",
-            "total_participants": 50,
-            "spring_participants": 28,
-            "fall_participants": 22,
-            "internship_placements": 50,
-            "bootcamp_description": "3-month full-time training followed by a 6-12-month internship offered twice a year to help participants from refugee and migrant backgrounds enter the IT workforce by developing IT specialisations and soft skills."
-        },
-        {
-            "type": "community",
-            "community_description": "We celebrated 50 graduates: A Night to Remember! In July 2023 we got together for our awesome Community Party, where we celebrated our magnificent community along with the 50 graduates from our Bootcamp and AWS re/Start program. They began their internships in fall 2023 and are now working hard to achieve their goals for a bright future.",
-            "community_members": 50,
-            "community_members_description": "Graduates",
-            "community_job_coaches": 129,
-            "community_it_trainers": 80,
-            "community_workshop_facilitators": 78
-        },
-        {
-            "type": "overview",
-            "overview_years": 6,
-            "overview_description": "From 2017 to 2023, Powercoders is set for success.",
-            "career_days": 24,
-            "bootcamp_participants": 93,
-            "bootcamp_participants_percentage": "%",
-            "bootcamp_participants_description": "Internship Placements",
-            "bootcamp_graduates": 314,
-            "internship_companies": 170,
-            "companies_with_multiple_interns": "30",
-            "overview_image": "./src/assets/images/Overview_2023.png"
-        },
-        {
+  "year": 2023,
+  "sections": [
+    {
+      "type": "impact_section"
+    },
+    {
+      "type": "integration_numbers",
+      "internship_placement_rate": 93,
+      "integration_rate": 60,
+      "accelerated_integration": 5,
+      "employment_probability": 44,
+      "graduates": 314,
+      "partner_companies": 170,
+      "applications_received": 532
+    },
+    {
+      "type": "women_connect",
+      "women_connect_description": "In 2023, we launched Women Connect to provide opportunities for women in the underrepresented field of IT, focusing on those from migrant or refugee backgrounds. Our pilot program featured workshops led by accomplished professionals, covering essential IT skills and exploring diverse career paths.",
+      "female_participants": 16,
+      "workshop_leaders": 15,
+      "female_impact": 90,
+      "female_impact_description": "Empowering women for IT careers"
+    },
+    {
+      "type": "futurecoders",
+      "futurecoders_description": "Our spin-off Futurecoders is committed to equal opportunities in education. We enable young refugees and young people from low-income backgrounds to develop their digital skills and interest in IT professions in courses and vacation camps. This should increase their chances in later professional life.",
+      "futurecoders_cities": 8,
+      "futurecoders_programs": [
+        "Web Development",
+        "Mobile App Development",
+        "Video Game Design"
+      ],
+      "futurecoders_graduates": 328,
+      "futurecoders_average_age": 16,
+      "futurecoders_trial_days": 75,
+      "futurecoders_trial_days_description": "Teens in IT Trial Days"
+    },
+    {
+      "type": "bootcamp",
+      "total_participants": 50,
+      "spring_participants": 28,
+      "fall_participants": 22,
+      "internship_placements": 50,
+      "bootcamp_description": "3-month full-time training followed by a 6-12-month internship offered twice a year to help participants from refugee and migrant backgrounds enter the IT workforce by developing IT specialisations and soft skills."
+    },
+    {
+      "type": "community",
+      "community_description": "We celebrated 50 graduates: A Night to Remember! In July 2023 we got together for our awesome Community Party, where we celebrated our magnificent community along with the 50 graduates from our Bootcamp and AWS re/Start program. They began their internships in fall 2023 and are now working hard to achieve their goals for a bright future.",
+      "community_members": 50,
+      "community_members_description": "Graduates",
+      "community_job_coaches": 129,
+      "community_it_trainers": 80,
+      "community_workshop_facilitators": 78
+    },
+    {
+      "type": "overview",
+      "overview_years": 6,
+      "overview_description": "From 2017 to 2023, Powercoders is set for success.",
+      "career_days": 24,
+      "bootcamp_participants": 93,
+      "bootcamp_participants_percentage": "%",
+      "bootcamp_participants_description": "Internship Placements",
+      "bootcamp_graduates": 314,
+      "internship_companies": 170,
+      "companies_with_multiple_interns": "30",
+      "overview_image": "./src/assets/images/Overview_2023.png"
+    },
+    {
             "type": "highlights",
             "highlights_description": "Talents have been placed in 54 internships and 1 apprenticeship. 42 found a job in 2024.",
             "highlights_participants": 50,
@@ -72,38 +76,107 @@
             "highlights_jobs_description": "Female graduates",
             "highlights_image": ""
         },
+    {
+      "type": "partners",
+      "partners": [
+        { "name": "ABB", "logo_path": "./src/assets/images/Industry_ABB.png" },
         {
-            "type": "partners",
-            "partners": [
-                {"name": "ABB", "logo_path": "./src/assets/images/Industry_ABB.png"},
-                {"name": "Adobe", "logo_path": "./src/assets/images/industry_adobe_def.png"},
-                {"name": "Migros", "logo_path": "./src/assets/images/industry_migros.png"},
-                { "name": "Bechtle", "logo_path": "./src/assets/images/Industry_Bechtle.png" },
-                { "name": "Buehler", "logo_path": "./src/assets/images/industry_buehler.png" },
-                { "name": "Datahouse", "logo_path": "./src/assets/images/Industry_Datahouse.png" },
-                { "name": "IBM", "logo_path": "./src/assets/images/Industry_ibm.jpeg" },
-                { "name": "ICRC", "logo_path": "./src/assets/images/Industry_ICRC.png" },
-                { "name": "InteractiveThings", "logo_path": "./src/assets/images/industry_InteractiveThings.png" },
-                { "name": "Liip", "logo_path": "./src/assets/images/industry_Liip-digital-process.png" },
-                { "name": "Logitech", "logo_path": "./src/assets/images/Industry_Logitech.png" },
-                { "name": "Mobiliar", "logo_path": "./src/assets/images/Industry_Mobiliar.png" },
-                { "name": "ON", "logo_path": "./src/assets/images/Industry_ON.png" },
-                { "name": "Post", "logo_path": "./src/assets/images/industry_post.png" },
-                { "name": "PWC", "logo_path": "./src/assets/images/Industry_PWC-1.png" },
-                { "name": "Roche", "logo_path": "./src/assets/images/industry_Roche.png" },
-                { "name": "Rychiger", "logo_path": "./src/assets/images/industry_Rychiger.png" },
-                { "name": "SBB", "logo_path": "./src/assets/images/Industry_SBB.png" },
-                { "name": "Seantis", "logo_path": "./src/assets/images/Industry_Seantis.png" },
-                { "name": "SIX", "logo_path": "./src/assets/images/industry_SIX.png" },
-                { "name": "SwissCluster", "logo_path": "./src/assets/images/industry_SwissCluster.png" },
-                { "name": "Swisscom", "logo_path": "./src/assets/images/industry_swisscom.png" },
-                { "name": "SwissTXT", "logo_path": "./src/assets/images/Industry_SwissTXT.png" },
-                { "name": "Technis", "logo_path": "./src/assets/images/Industry_Technis.png" },
-                { "name": "Temenos", "logo_path": "./src/assets/images/industry_Temenos.png" },
-                { "name": "UBS", "logo_path": "./src/assets/images/Industry_UBS_grau2.png" },
-                { "name": "Vaudoise", "logo_path": "./src/assets/images/industry_Vaudoise.png" },
-                { "name": "Zurich", "logo_path": "./src/assets/images/Industry_Zurich2.png" }
-            ]
+          "name": "Adobe",
+          "logo_path": "./src/assets/images/industry_adobe_def.png"
+        },
+        {
+          "name": "Migros",
+          "logo_path": "./src/assets/images/industry_migros.png"
+        },
+        {
+          "name": "Bechtle",
+          "logo_path": "./src/assets/images/Industry_Bechtle.png"
+        },
+        {
+          "name": "Buehler",
+          "logo_path": "./src/assets/images/industry_buehler.png"
+        },
+        {
+          "name": "Datahouse",
+          "logo_path": "./src/assets/images/Industry_Datahouse.png"
+        },
+        { "name": "IBM", "logo_path": "./src/assets/images/Industry_ibm.jpeg" },
+        {
+          "name": "ICRC",
+          "logo_path": "./src/assets/images/Industry_ICRC.png"
+        },
+        {
+          "name": "InteractiveThings",
+          "logo_path": "./src/assets/images/industry_InteractiveThings.png"
+        },
+        {
+          "name": "Liip",
+          "logo_path": "./src/assets/images/industry_Liip-digital-process.png"
+        },
+        {
+          "name": "Logitech",
+          "logo_path": "./src/assets/images/Industry_Logitech.png"
+        },
+        {
+          "name": "Mobiliar",
+          "logo_path": "./src/assets/images/Industry_Mobiliar.png"
+        },
+        { "name": "ON", "logo_path": "./src/assets/images/Industry_ON.png" },
+        {
+          "name": "Post",
+          "logo_path": "./src/assets/images/industry_post.png"
+        },
+        {
+          "name": "PWC",
+          "logo_path": "./src/assets/images/Industry_PWC-1.png"
+        },
+        {
+          "name": "Roche",
+          "logo_path": "./src/assets/images/industry_Roche.png"
+        },
+        {
+          "name": "Rychiger",
+          "logo_path": "./src/assets/images/industry_Rychiger.png"
+        },
+        { "name": "SBB", "logo_path": "./src/assets/images/Industry_SBB.png" },
+        {
+          "name": "Seantis",
+          "logo_path": "./src/assets/images/Industry_Seantis.png"
+        },
+        { "name": "SIX", "logo_path": "./src/assets/images/industry_SIX.png" },
+        {
+          "name": "SwissCluster",
+          "logo_path": "./src/assets/images/industry_SwissCluster.png"
+        },
+        {
+          "name": "Swisscom",
+          "logo_path": "./src/assets/images/industry_swisscom.png"
+        },
+        {
+          "name": "SwissTXT",
+          "logo_path": "./src/assets/images/Industry_SwissTXT.png"
+        },
+        {
+          "name": "Technis",
+          "logo_path": "./src/assets/images/Industry_Technis.png"
+        },
+        {
+          "name": "Temenos",
+          "logo_path": "./src/assets/images/industry_Temenos.png"
+        },
+        {
+          "name": "UBS",
+          "logo_path": "./src/assets/images/Industry_UBS_grau2.png"
+        },
+        {
+          "name": "Vaudoise",
+          "logo_path": "./src/assets/images/industry_Vaudoise.png"
+        },
+        {
+          "name": "Zurich",
+          "logo_path": "./src/assets/images/Industry_Zurich2.png"
         }
-    ]
+      ]
+    }
+  ]
 }
