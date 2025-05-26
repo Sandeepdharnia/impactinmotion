@@ -106,5 +106,5 @@ function loadData(path) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    loadData('./data/2024.json');
+    loadData('./data/2025.json');
 });
