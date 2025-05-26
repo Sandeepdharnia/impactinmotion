@@ -345,6 +345,53 @@ sections_renders.overview = function(year, data) {
     </div>`;
 }
 
+sections_renders.highlights = function(year, data) {
+    return `
+    <div class="static-container" data-id="future-talents">
+        <div class="static-block">
+          <div class="static-content">
+            <h2>Highlights ${year}</h2>
+            <p class="slide-in_description">
+              ${data.highlights_description}
+            </p>
+                <ul class="impact-container">
+                    <li class="impact-item">
+                        <div>
+                            <p class="impact-counter">
+                                <span class="counter" data-target="${data.highlights_participants}">0</span>
+                            </p>
+                            <p class="women-connect_subtext">Bootcamp participants out of</p>
+                            <img src="./src/assets/images/Powercoders_Icons_Mission.png" alt="Powercoders_Icons">
+                        </div>
+                    </li>
+                    <li class="impact-item">
+                        <div>
+                            <p class="impact-counter">
+                                <span class="counter" data-target="${data.bootcamp_applicants}">0</span>
+                            </p>
+                            <p class="women-connect_subtext">Bootcamp applicants</p>
+                            <img src="./src/assets/images/Powercoders_Icons_Mission.png" alt="Powercoders_Icons">
+                        </div>
+                    </li>
+                    <li class="impact-item">
+                        <div>
+                            <p class="impact-counter">
+                                <span class="counter" data-target="${data.highlights_jobs}">0</span>${data.highlight_female_percentage}
+                            </p>
+                            <p class="women-connect_subtext">${data.highlights_jobs_description}</p>
+                            <img src="./src/assets/images/Powercoders_Icons_WhatWeProvide-21-300x300.png" alt="Powercoders_Icons">
+                        </div>
+                    </li>
+                </ul>
+                <div class="bootcamp_grid-container">
+                    <img src="./src/assets/images/19-03-Powercoders-Grauduationparty-Basel-182-klein-scaled.jpg" alt="Career Day image">
+                    <img src="./src/assets/images/PowerCoders-20-scaled.jpg" alt="Career Day image">
+                </div>
+            </div>
+        </div>
+    </div>`;
+}
+
 sections_renders.partners = function(year, data) {
     let partners_logos = [];
     for (let i = 0; i < data.partners.length; i++) {

@@ -52,13 +52,23 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 10px 40px;
   z-index: 100;
 }
 
 header img {
   height: 40px;
+}
+
+.button_years-container.header_buttons {
+  position: relative;
+  background-color: transparent;
+  justify-content: end;
+  margin: 0 60px 0;
 }
 
 .intro_section {
