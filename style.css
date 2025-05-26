@@ -292,6 +292,11 @@ header img {
   justify-content: center;
  }
 
+ .partners-container {
+  background-color: var(--grey-background);
+  padding: 20px 0;
+ }
+
 .partners-section {
   width: 1140px;
   margin: 140px auto;
@@ -377,8 +382,59 @@ header img {
   object-fit: cover;
 }
 
+.thankyou-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.thankyou-container {
+  width: 1140px;
+  display: flex;
+  gap: 40px;
+}
+
+.thankyou-section h2 {
+  margin: 20px 0;
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.thankyou-container  p {
+  margin: 30px 0;
+  font-size: 20px;
+  color: #333333;
+}
+
+.thankyou-images {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.thankyou-images .thankyou-img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.thankyou-container ul {
+  list-style: none;
+}
+
+.thankyou-container li {
+  display: flex;
+  gap: 20px;
+}
+
+.thankyou-container img {
+  width: 100px;
+  height: auto;
+}
+
 .contact-section {
-  background-color: var(--main-text-color);
   background-color: var(--grey-background);
   display: flex;
   justify-content: center;
