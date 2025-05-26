@@ -67,15 +67,15 @@
       "overview_image": "./src/assets/images/Overview_2023.png"
     },
     {
-            "type": "highlights",
-            "highlights_description": "Talents have been placed in 54 internships and 1 apprenticeship. 42 found a job in 2024.",
-            "highlights_participants": 50,
-            "bootcamp_applicants": 532,
-            "highlights_jobs": 37.7,
-            "highlight_female_percentage": "%",
-            "highlights_jobs_description": "Female graduates",
-            "highlights_image": ""
-        },
+        "type": "highlights",
+        "highlights_description": "Talents have been placed in 54 internships and 1 apprenticeship. 42 found a job in 2024.",
+        "highlights_participants": 50,
+        "bootcamp_applicants": 532,
+        "highlights_jobs": 37.7,
+        "highlight_female_percentage": "%",
+        "highlights_jobs_description": "Female graduates",
+        "highlights_image": ""
+    },
     {
       "type": "partners",
       "partners": [
