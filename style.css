@@ -5,31 +5,108 @@
 }
 
 /* CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 body {
@@ -38,11 +115,15 @@ body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Patrick Hand", cursive;
   font-weight: 400;
   font-style: normal;
@@ -78,7 +159,7 @@ header img {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-image: url('./src/assets/images/20220420_A11y-Workshop_Powercoders-69-scaled.jpeg');
+  background-image: url("./src/assets/images/20220420_A11y-Workshop_Powercoders-69-scaled.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -127,6 +208,12 @@ header img {
 .ml12 .letter {
   display: inline-block;
   line-height: 1em;
+  text-transform: lowercase;
+}
+
+.ml12 .letter:first-child,
+.ml12 .letter:nth-child(7) {
+  text-transform: capitalize !important;
 }
 
 .impact_section {
@@ -150,7 +237,7 @@ header img {
 
 .slide-in-container {
   position: relative;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .slide-in-block {
@@ -200,7 +287,7 @@ header img {
 
 .static-container {
   position: relative;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .static-block {
@@ -256,7 +343,7 @@ header img {
   flex-wrap: wrap;
   gap: 1rem;
   list-style: none;
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 
 .impact-item {
@@ -286,16 +373,16 @@ header img {
   margin: 10px 0;
 }
 
- .item-without_number {
+.item-without_number {
   display: flex;
   align-items: center;
   justify-content: center;
- }
+}
 
- .partners-container {
+.partners-container {
   background-color: var(--grey-background);
   padding: 20px 0;
- }
+}
 
 .partners-section {
   width: 1140px;
@@ -307,7 +394,7 @@ header img {
   font-size: 38px;
   font-weight: 700;
   line-height: 1.2;
-  color: var(--main-text-color);  
+  color: var(--main-text-color);
   margin-bottom: 100px;
 }
 
@@ -348,7 +435,7 @@ header img {
   }
 }
 
-.women-connect-container .slide-in-block{
+.women-connect-container .slide-in-block {
   background-color: var(--main-text-color);
   color: white;
 }
@@ -361,7 +448,7 @@ header img {
 
 .women-connect-container .impact-item {
   background-color: #f6f6f6;
-  color:#333333;
+  color: #333333;
 }
 
 .women-connect_subtext {
@@ -402,7 +489,7 @@ header img {
   color: var(--main-text-color);
 }
 
-.thankyou-container  p {
+.thankyou-container p {
   margin: 30px 0;
   font-size: 20px;
   color: #333333;
@@ -467,7 +554,7 @@ header img {
   color: white;
 }
 
-.contact-container a:hover { 
+.contact-container a:hover {
   background-color: #6dbdb2;
   color: white;
 }

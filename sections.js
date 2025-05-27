@@ -1,7 +1,7 @@
-var sections_renders = {}
+var sections_renders = {};
 
-sections_renders.impact_section = function(year, data) {
-    return `
+sections_renders.impact_section = function (year, data) {
+  return `
     <div class="impact_section">
         <h2>Impact</h2>
         <p>We are an impact-driven organization and therefore prioritize making a positive impact in the world. 
@@ -9,10 +9,10 @@ sections_renders.impact_section = function(year, data) {
         </p>
         <p>We focus on “Quality Education”, “Decent Work” and “Reduced Inequalities” from the Sustainable Development Goals Agenda 2030.</p>
     </div>`;
-}
+};
 
-sections_renders.integration_numbers = function(year, data) {
-    return `
+sections_renders.integration_numbers = function (year, data) {
+  return `
     <div class="slide-in-container">
         <div class="slide-in-block">
             <div class="slide-in-content">
@@ -53,14 +53,14 @@ sections_renders.integration_numbers = function(year, data) {
             </div>
         </div>
     </div>`;
-}
+};
 
-sections_renders.future_talents = function(year, data) {
-    return `
+sections_renders.future_talents = function (year, data) {
+  return `
     <div class="static-container" data-id="future-talents">
         <div class="static-block">
           <div class="static-content">
-            <h2>Future talents</h2>
+            <h2>Future Talents</h2>
             <p class="slide-in_description">
               ${data.future_talents_description}
             </p>
@@ -97,10 +97,10 @@ sections_renders.future_talents = function(year, data) {
             </div>
         </div>
     </div>`;
-}
+};
 
-sections_renders.women_connect = function(year, data) {
-    return `
+sections_renders.women_connect = function (year, data) {
+  return `
     <div class="slide-in-container women-connect-container" data-id="women-connect">
         <div class="slide-in-block">
           <div class="slide-in-content">
@@ -145,10 +145,10 @@ sections_renders.women_connect = function(year, data) {
           </div>
         </div>
     </div>`;
-}
+};
 
-sections_renders.futurecoders = function(year, data) {
-    return `
+sections_renders.futurecoders = function (year, data) {
+  return `
     <div class="static-container" data-id="future-talents">
         <div class="static-block">
           <div class="static-content">
@@ -192,10 +192,10 @@ sections_renders.futurecoders = function(year, data) {
             </div>
         </div>
     </div>`;
-}
+};
 
-sections_renders.bootcamp = function(year, data) {
-    return `
+sections_renders.bootcamp = function (year, data) {
+  return `
     <div class="slide-in-container" data-id="bootcamp">
         <div class="slide-in-block">
             <div class="slide-in-content">
@@ -239,10 +239,10 @@ sections_renders.bootcamp = function(year, data) {
             </div>
         </div>
     </div>`;
-}
+};
 
-sections_renders.community = function(year, data) {
-    return `
+sections_renders.community = function (year, data) {
+  return `
     <div class="static-container" data-id="future-talents">
         <div class="static-block">
           <div class="static-content">
@@ -286,14 +286,14 @@ sections_renders.community = function(year, data) {
             </div>
         </div>
     </div>`;
-}
+};
 
-sections_renders.overview = function(year, data) {
-    return `
+sections_renders.overview = function (year, data) {
+  return `
     <div class="slide-in-container women-connect-container" data-id="women-connect">
         <div class="slide-in-block">
           <div class="slide-in-content">
-            <h2>${data.overview_years} years in a nutshell</h2>
+            <h2>${data.overview_years} Years in a Nutshell</h2>
             <p class="slide-in_description">
               ${data.overview_description}
             </p>
@@ -343,10 +343,10 @@ sections_renders.overview = function(year, data) {
           </div>
         </div>
     </div>`;
-}
+};
 
-sections_renders.highlights = function(year, data) {
-    return `
+sections_renders.highlights = function (year, data) {
+  return `
     <div class="static-container" data-id="future-talents">
         <div class="static-block">
           <div class="static-content">
@@ -390,23 +390,25 @@ sections_renders.highlights = function(year, data) {
             </div>
         </div>
     </div>`;
-}
+};
 
-sections_renders.partners = function(year, data) {
-    let partners_logos = [];
-    for (let i = 0; i < data.partners.length; i++) {
-        partners_logos.push(`<img src="${data.partners[i].logo_path}" alt="${data.partners[i].name} logo" />`);
-    }
+sections_renders.partners = function (year, data) {
+  let partners_logos = [];
+  for (let i = 0; i < data.partners.length; i++) {
+    partners_logos.push(
+      `<img src="${data.partners[i].logo_path}" alt="${data.partners[i].name} logo" />`
+    );
+  }
 
-    return `
+  return `
     <div class="partners-container">
         <div class="partners-section">
             <h2>Internship Partners</h2>
             <div class="marquee">
                 <div class="marquee-content">
-                    ${partners_logos.join('')}
+                    ${partners_logos.join("")}
                 </div>
             </div>
         </div>
     </div>`;
-}
+};
