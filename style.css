@@ -234,6 +234,7 @@ header img {
 .impact_section p {
   font-size: 20px;
   margin: 20px 0;
+  text-align: justify;
 }
 
 .slide-in-container {
@@ -553,6 +554,7 @@ header img {
 .contact-container p {
   margin: 40px 0;
   font-size: 20px;
+  text-align: justify;
 }
 
 .contact-container a {
@@ -705,10 +707,13 @@ footer {
     height: max-content;
   }
 
-
   .slide-in-content {
     width: 90%;
     padding: 1.5rem;
+  }
+
+  .slide-in_description {
+    text-align: justify;
   }
 
   .impact-item {
@@ -762,6 +767,10 @@ footer {
     width: 60px;
     height: auto;
   }
+
+  .thankyou-content > p {
+    text-align: justify;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -797,6 +806,10 @@ footer {
     right: 16px;
   }
 
+  .item-without_number .women-connect_subtext {
+    margin-top: 30px;
+  }
+
   .impact-counter {
     font-size: 28px;
   }
@@ -822,6 +835,10 @@ footer {
 @media screen and (max-width: 500px) {
   header img {
     height: 20px;
+  }
+
+  .ml12 {
+    font-size: 2.5rem;
   }
 
   .intro_section .button_years-container {
