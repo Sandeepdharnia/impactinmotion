@@ -238,7 +238,8 @@ header img {
 
 .slide-in-container {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  height: max-content;
 }
 
 .slide-in-block {
@@ -246,7 +247,8 @@ header img {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: max-content;
   background-color: #f6f6f6;
   transform: translateX(-100%);
   display: flex;
@@ -288,7 +290,7 @@ header img {
 
 .static-container {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .static-block {
@@ -297,7 +299,7 @@ header img {
 }
 
 .static-content {
-  height: 100vh;
+  min-height: 100vh;
   width: 1140px;
   display: flex;
   flex-direction: column;
@@ -316,14 +318,6 @@ header img {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
   gap: 16px;
-}
-
-/* should be removed after applying grid */
-.impact-images_container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 24px;
-  margin-top: 16px;
 }
 
 .impact-image,
@@ -350,23 +344,6 @@ header img {
   grid-column: 3 / 4;
 }
 
-/* should be removed after applying grid */
-.bootcamp_grid-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 24px;
-  margin-top: 16px;
-}
-
-/* should be removed after applying grid */
-.bootcamp_grid-container img {
-  width: 100%;
-  height: 240px;
-  border-radius: 6px;
-  object-fit: cover;
-}
-
-/* should be removed after applying grid */
 .impact-container {
   display: flex;
   flex-wrap: wrap;
@@ -376,7 +353,6 @@ header img {
 }
 
 .impact-item {
-  /* width: 33%; */
   height: 150px;
   position: relative;
   font-size: 30px;
@@ -529,6 +505,7 @@ header img {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  order: 1;
 }
 
 .thankyou-images .thankyou-img {
@@ -536,6 +513,11 @@ header img {
   border-radius: 6px;
   object-fit: cover;
 }
+
+.thankyou-content {
+  order: 2;
+}
+
 .thankyou-container ul {
   list-style: none;
 }
@@ -616,19 +598,32 @@ footer {
     box-sizing: border-box;
   }
 
-  .intro_section .button_years-container {
-    width: auto;
-  }
-
   .slide-in-content,
   .static-content {
     width: 100%;
   }
+
+  .impact-counter {
+    font-size: 34px;
+    margin: 10px 0;
+  }
+
+  .impact-item {
+    font-size: 28px;
+  }
+
+  .women-connect-container .impact-item {
+    padding: 1rem;
+  }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   header {
     padding: 10px 20px;
+  }
+
+  .button_years-container {
+    width: 100%;
   }
 
   .button_years-container.header_buttons {
@@ -636,12 +631,33 @@ footer {
     margin: 0;
   }
 
+  .intro_section .button_years-container {
+    width: auto;
+  }
+
   .ml12 {
     font-size: 4rem;
+  }
+
+  .impact-item {
+    font-size: 24px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  header img {
+    height: 32px;
+  }
+
+  header .button_years-container {
+    padding: 2px 20px;
+  }
+
+  header .button_years-container button {
+    font-size: 24px;
+    padding: 0 6px;
+  }
+
   .marquee-content img {
     height: 60px;
   }
@@ -655,14 +671,147 @@ footer {
     grid-column: auto;
   }
 
+  .bootcamp_grid-image:nth-of-type(1),
+  .bootcamp_grid-image:nth-of-type(2) {
+    grid-column: auto;
+  }
+
+  .women-connect_flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .impact-container {
+    width: 100%;
+    flex-direction: column;
+  }
+
   .ml12 {
     font-size: 3rem;
+  }
+
+  .slide-in-container,
+  .static-container {
+    height: max-content;
+  }
+
+  .slide-in-block {
+    position: relative;
+    transform: none;
+  }
+
+  .slide-in-content,
+  .static-content {
+    height: max-content;
+  }
+
+
+  .slide-in-content {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .impact-item {
+    font-size: 24px;
+    height: auto;
+    flex: none;
+    padding: 1.5rem 1rem;
+  }
+
+  .impact-item img {
+    top: 8px;
+    right: 20px;
+    width: 48px;
+  }
+
+  .impact-counter {
+    font-size: 32px;
+  }
+
+  .impact-image, 
+  .bootcamp_grid-image {
+    height: 200px;
+  }
+
+  .thankyou-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thankyou-container p {
+    margin: 16px 0;
+  }
+
+  .thankyou-images {
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+    order: 2;
+  }
+
+  .thankyou-images .thankyou-img {
+    width: 50%;
+    height: 200px;
+  }
+
+  .thankyou-content {
+    order: 1;
+  }
+
+  .thankyou-content img {
+    width: 60px;
+    height: auto;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .ml12 {
-    font-size: 2rem;
+
+  header img {
+    height: 28px;
   }
 
+  .intro_section {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  header .button_years-container {
+    gap: 10px;
+  }
+
+  header .button_years-container button {
+    font-size: 16px;
+    padding: 0;
+  }
+
+   .impact-item {
+    font-size: 20px;
+    padding: 1rem;
+  }
+
+  .impact-item img {
+    width: 40px;
+    right: 16px;
+  }
+
+  .impact-counter {
+    font-size: 28px;
+  }
+
+  .women-connect_flex-container > div {
+    margin-top: 40px;
+  }
+
+  .women-connect_flex-container > div img {
+    width: 100%;
+  }
+
+  .thankyou-images {
+    flex-direction: column;
+  }
+
+  .thankyou-images .thankyou-img {
+    width: 100%;
+    height: 200px;
+  }
 }
