@@ -1,3 +1,11 @@
+var Report = {
+    currentJSON: {},
+    currentJSONString: '',
+    schemaJSON: {},
+    schemaJSONString: '',
+    editor: null
+}
+
 function setHandlers() {
     // Animate letters
     let textWrapper = document.querySelector('.ml12');
@@ -77,14 +85,14 @@ function setHandlers() {
     });
 }
 
-function renderHtml(data) {
+function renderHtml() {
+    let data = Report.currentJSON;
     document.querySelector('.impact_container').innerHTML = '';
     for (let i = 0; i < data.sections.length; i++) {
         let section_data = data.sections[i];
         document.querySelector('.impact_container').insertAdjacentHTML('beforeend', sections_renders[section_data.type](data.year, section_data));
     }
     document.querySelector('.ml12').textContent = 'Impact report ' + data.year; 
-    // document.querySelector('.ml12 .year').textContent = data.year;
     setHandlers();
 }
 
@@ -98,13 +106,61 @@ function loadData(path) {
     })
     .then(data => {
         console.log('JSON data:', data);
-        renderHtml(data);
+        Report.currentJSON = data;
+        renderHtml();
     })
     .catch(error => {
         console.error('Fetch error:', error);
     });
 }
 
+function openEditor() {
+    Report.editor.set(Report.currentJSON);
+    document.getElementById('jsoneditor-container').style.display = 'grid';
+}
+
+function closeEditor() {
+    document.getElementById('jsoneditor-container').style.display = 'none';
+}
+
+function applyEditor() {
+    Report.currentJSON = Report.editor.get()
+    renderHtml();
+    closeEditor();
+}
+
+function loadEditor() {
+    ///
+}
+
+function saveEditor() {
+    ///
+}
+
 window.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById("jsoneditor");
+    const options = {
+        schema: {},
+        mode: 'code',
+        modes: ['code', 'tree', 'preview']
+    }
+    Report.editor = new JSONEditor(container, options);
+
+    fetch('schema/report.schema.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('schema JSON data:', data);
+        Report.schemaJSON = data;
+        Report.editor.setSchema(data);
+    })
+    .catch(error => {
+        console.error('Fetch error:', error);
+    });
+
     loadData('./data/2025.json');
 });
