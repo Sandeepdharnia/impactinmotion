@@ -11,20 +11,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.1.3/jsoneditor.min.css" integrity="sha512-8G+Vb2+10BSrSo+wupdzJIylDLpGtEYniQhp0rsbTigPG7Onn2S08Ai/KEGlxN2Ncx9fGqVHtRehMuOjPb9f8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Powercoders Impact Report</title>
   </head>
   <body>
     <header>
       <img src="./src/assets/images/powercoders-logo-1.svg" alt="Powercoders logo"/>
       <div class="button_years-container header_buttons">
-        <button class="button_2025" onclick="loadData('./data/2025.json')">
+        <button onclick="loadData('./data/2025.json')">
           2025
         </button>
-        <button class="button_2024" onclick="loadData('./data/2024.json')">
+        <button onclick="loadData('./data/2024.json')">
           2024
         </button>
-        <button class="button_2023" onclick="loadData('./data/2023.json')">
+        <button onclick="loadData('./data/2023.json')">
           2023
+        </button>
+        <button id="jsoneditor-edit-button" onclick="openEditor()">
+          Edit
         </button>
       </div>
     </header>
@@ -125,7 +129,18 @@
 
     <footer>2025 © POWERCODERS</footer>
 
+    <div id="jsoneditor-container">
+      <div id="jsoneditor"></div>
+      <div class="jsoneditor-buttons">
+        <button onclick="applyEditor()">Apply</button>
+        <button onclick="loadEditor()">Load</button>
+        <button onclick="saveEditor()">Save</button>
+        <button onclick="closeEditor()">Cancel</button>
+      </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/10.1.3/jsoneditor.min.js" integrity="sha512-nSq28mOI6mPYnThjsLomwt5wbRkx66HV+o9g4s3EsJkQqqGmgsi2Qq7Y53PiEw7UQXx5ojddxaTYhBCq5ct/Pg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./sections.js"></script>
     <script src="./main.js"></script>
   </body>
