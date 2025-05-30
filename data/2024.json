@@ -66,7 +66,7 @@
             "bootcamp_participants_description": "Bootcamp participants",
             "bootcamp_graduates": 365,
             "internship_companies": 205,
-            "companies_with_multiple_interns": "30",
+            "companies_with_multiple_interns": 30,
             "overview_image": "./src/assets/images/CareerDay-Deutschschweiz-25_1.jpg"
         },
         {

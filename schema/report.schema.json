@@ -1,0 +1,169 @@
+{
+    "schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://powercoders.org/report.schema.json",
+    "title": "Report",
+    "description": "Powercoders Report",
+    "type": "object",
+    "properties": {
+        "year": {"type": "integer", "minimum": 2023, "maximum": 2100},
+        "sections": {
+            "description": "",
+            "type": "array",
+            "items": {
+            "type": "object",
+            "oneOf": [
+                {
+                    "properties": { "type": {"const": "impact_section"} },
+                    "required": ["type"],
+                    "additionalProperties": false
+                },
+                {
+                    "properties": {
+                        "type": {"const": "integration_numbers"},
+                        "internship_placement_rate": {"type": "integer"},
+                        "integration_rate": {"type": "integer"},
+                        "accelerated_integration": {"type": "integer"},
+                        "employment_probability": {"type": "integer"},
+                        "graduates": {"type": "integer"},
+                        "partner_companies": {"type": "integer"},
+                        "applications_received": {"type": "integer"}
+                    },
+                    "required": ["type", "internship_placement_rate", "integration_rate", "accelerated_integration", 
+                        "employment_probability", "graduates", "partner_companies", "applications_received"],
+                    "additionalProperties": false
+                },
+                {
+                    "properties": {
+                        "type": {"const": "future_talents"},
+                        "future_talents_location": {"type": "string"},
+                        "future_talents_participants": {"type": "integer"},
+                        "secured_apprenticeships": {"type": "integer"},
+                        "future_talents_description": {"type": "string"}
+                    },
+                    "required": ["type", "future_talents_location", "future_talents_participants", "secured_apprenticeships", "future_talents_description"],
+                    "additionalProperties": false
+                },
+                {
+                    "properties": {
+                        "type": {"const": "women_connect"},
+                        "women_connect_description": {"type": "string"},
+                        "female_participants": {"type": "integer"},
+                        "workshop_leaders": {"type": "integer"},
+                        "female_impact": {"type": "integer"},
+                        "female_impact_description": {"type": "string"}
+                    },
+                    "required": ["type", "women_connect_description", "female_participants", "workshop_leaders",
+                        "female_impact", "female_impact_description"],
+                    "additionalProperties": false
+                },
+                {
+                    "properties": {
+                        "type": {"const": "futurecoders"},
+                        "futurecoders_description": {"type": "string"},
+                        "futurecoders_cities": {"type": "integer"},
+                        "futurecoders_programs": {"type": "array", "items": {"type": "string"}},
+                        "futurecoders_graduates": {"type": "integer"},
+                        "futurecoders_average_age": {"type": "integer"},
+                        "futurecoders_trial_days": {"type": "integer"},
+                        "futurecoders_trial_days_description": {"type": "string"}
+                    },
+                    "required": ["type", "futurecoders_description", "futurecoders_cities", "futurecoders_programs",
+                        "futurecoders_graduates", "futurecoders_average_age", "futurecoders_trial_days",
+                        "futurecoders_trial_days_description"],
+                    "additionalProperties": false
+                },
+                {
+                    "properties": {
+                        "type": {"const": "bootcamp"},
+                        "total_participants": {"type": "integer"},
+                        "spring_participants": {"type": "integer"},
+                        "fall_participants": {"type": "integer"},
+                        "internship_placements": {"type": "integer"},
+                        "bootcamp_description": {"type": "string"}
+                    },
+                    "required": ["type", "total_participants", "spring_participants", "fall_participants", 
+                        "internship_placements", "bootcamp_description"],
+                    "additionalProperties": false
+                },
+                {
+                    "properties": {
+                        "type": {"const": "community"},
+                        "community_description": {"type": "string"},
+                        "community_members": {"type": "integer"},
+                        "community_members_description": {"type": "string"},
+                        "community_job_coaches": {"type": "integer"},
+                        "community_it_trainers": {"type": "integer"},
+                        "community_workshop_facilitators": {"type": "integer"}  
+                    },
+                    "required": ["type", "community_description", "community_members", "community_members_description",
+                        "community_job_coaches", "community_it_trainers", "community_workshop_facilitators"],
+                    "additionalProperties": false
+                },
+
+                {
+                    "properties": {
+                        "type": {"const": "overview"},
+                        "overview_years": {"type": "integer"},
+                        "overview_description": {"type": "string"},
+                        "career_days": {"type": "integer"},
+                        "bootcamp_participants": {"type": "integer"},
+                        "bootcamp_participants_percentage": {"type": "string"},
+                        "bootcamp_participants_description": {"type": "string"},
+                        "bootcamp_graduates": {"type": "integer"},
+                        "internship_companies": {"type": "integer"},
+                        "companies_with_multiple_interns": {"type": "integer"},
+                        "overview_image": {"type": "string"}
+                    },
+                    "required": ["type", "overview_years", "overview_description", "career_days", "bootcamp_participants",
+                        "bootcamp_participants_percentage", "bootcamp_participants_description", "bootcamp_graduates",
+                        "internship_companies", "companies_with_multiple_interns", "overview_image"],
+                    "additionalProperties": false
+                },
+
+                {
+                    "properties": {
+                        "type": {"const": "highlights"},
+                        "highlights_description": {"type": "string"},
+                        "highlights_participants": {"type": "integer"},
+                        "bootcamp_applicants": {"type": "integer"},
+                        "highlights_jobs": {"type": "integer"},
+                        "highlight_female_percentage": {"type": "string"},
+                        "highlights_jobs_description": {"type": "string"},
+                        "highlights_image": {"type": "string"}
+                    },
+                    "required": ["type", "highlights_description", "highlights_participants", "bootcamp_applicants",
+                        "highlights_jobs", "highlight_female_percentage", "highlights_jobs_description", "highlights_image"],
+                    "additionalProperties": false
+                },
+
+                {
+                    "properties": {
+                        "type": {"const": "partners"},
+                        "partners": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {"type": "string"},
+                                    "logo_path": {"type": "string"}
+                                },
+                                "required": ["name", "logo_path"],
+                                "additionalProperties": false
+                            },
+                            "minItems": 1
+                        }
+                    },
+                    "required": ["type", "partners"],
+                    "additionalProperties": false
+                }
+            ]
+            },
+            "minItems": 1,
+            "maxItems": 20,
+            "uniqueItems": true
+        }
+    },
+    "required": ["year", "sections"],
+    "additionalProperties": false
+  }
+  
