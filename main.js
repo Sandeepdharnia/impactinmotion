@@ -129,12 +129,20 @@ function applyEditor() {
     closeEditor();
 }
 
-function loadEditor() {
-    ///
-}
-
 function saveEditor() {
-    ///
+    let fname = window.prompt("Save as...")
+
+    if (fname.indexOf(".") === -1) {
+      fname = fname + ".json"
+    } else {
+      if (fname.split('.').pop().toLowerCase() === "json") {
+        // Nothing to do
+      } else {
+        fname = fname.split('.')[0] + ".json"
+      }
+    }
+    const blob = new Blob([Report.editor.getText()], {type: 'application/json;charset=utf-8'})
+    saveAs(blob, fname)
 }
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -145,6 +153,27 @@ window.addEventListener('DOMContentLoaded', () => {
         modes: ['code', 'tree', 'preview']
     }
     Report.editor = new JSONEditor(container, options);
+
+    const fileInput = document.getElementById('fileInput');
+    const openFileBtn = document.getElementById('openFileBtn');
+
+    openFileBtn.addEventListener('click', () => {
+        fileInput.click();
+    });
+
+    fileInput.addEventListener('change', (event) => {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            const fileContent = e.target.result;
+            console.log("File content loaded:", fileContent);
+            Report.currentJSON = JSON.parse(fileContent);
+            Report.editor.set(Report.currentJSON);
+        };
+        reader.readAsText(file);
+    });
 
     fetch('schema/report.schema.json')
     .then(response => {
